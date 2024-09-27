@@ -155,9 +155,9 @@ void check()
 }
 #endregion
 
+// checking for update
 
-
-void enterDetailsCheck()
+void enterNameCheck()
 {
     #region enterDetailsCheckVars
     bool nameValid = false;
@@ -182,6 +182,7 @@ void enterDetailsCheck()
             {                                     // char[] alphabet = {'a'b'c'd'e'f'g'h'j'k'l'} etc.. also need to convert each index to capital via ToUpper();
                 if (check == uniqueCharacters[i] & uniqCharDetected == false)
                 {
+                    Console.WriteLine("----------------------------------------------------------------------------------");
                     Console.WriteLine("Symbol's/Numbers along with Blank space's are not permitted in your character name.");
                     Console.WriteLine("----------------------------------------------------------------------------------");
                     uniqCharDetected = true;
@@ -244,9 +245,9 @@ void enterDetailsCheck()
         }
     }  //string check only letters.
     
-
+   
 
 
 }
 
-enterDetailsCheck();
+enterNameCheck();
